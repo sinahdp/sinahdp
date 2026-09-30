@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mohammad Sina Heidaripour — Control Engineering</title>
+<meta name="description" content="Electrical Engineering student (Control Engineering) focused on intelligent control, reinforcement learning, and real-time C++ for aerospace and space systems.">
+<meta name="theme-color" content="#0b0e14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grid-bg" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="brand" href="#top"><span class="mono">sina@ctrl:~$</span></a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#focus">Focus</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <p class="mono eyebrow">Electrical Engineering · Control Systems</p>
+      <h1>Mohammad Sina<br><span class="accent">Heidaripour</span></h1>
+      <p class="lead">Control engineering student building toward <strong>intelligent control</strong> of aerospace and space systems — from dynamic modeling and classical control to reinforcement learning and real-time C++.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="https://github.com/sinahdp" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="mailto:sina.heidaripour@gmail.com">Email</a>
+      </div>
+    </div>
+    <figure class="sim">
+      <canvas id="pendulum" width="520" height="360" aria-label="Inverted pendulum stabilized by a PD controller"></canvas>
+      <figcaption class="mono">
+        <span id="simState">θ = 0.00°</span> · PD-stabilized inverted pendulum ·
+        <button id="kick" type="button">apply disturbance</button>
+      </figcaption>
+    </figure>
+  </section>
+
+  <section id="about">
+    <h2><span class="mono num">01</span> About</h2>
+    <div class="cols">
+      <p>I am an undergraduate in Electrical Engineering (Control) at Ferdowsi University of Mashhad. My work centers on <em>dynamic modeling</em>, feedback control, and how learning-based methods compare against classical controllers on real dynamical systems.</p>
+      <p>My long-term interest is guidance, navigation and control for <strong>spacecraft and space systems</strong>. I am building the foundations — modeling, estimation, optimal control, and modern C++ — that this field demands.</p>
+    </div>
+  </section>
+
+  <section id="focus">
+    <h2><span class="mono num">02</span> Focus &amp; learning roadmap</h2>
+    <p class="note mono">// areas I am actively studying — not claims of finished work</p>
+    <div class="cards">
+      <article class="card"><h3>Spacecraft Attitude Control</h3><p>Rigid-body dynamics, quaternions, reaction wheels, and attitude stabilization.</p></article>
+      <article class="card"><h3>State Estimation</h3><p>Kalman filter, EKF, and sensor fusion for navigation.</p></article>
+      <article class="card"><h3>Optimal &amp; Predictive Control</h3><p>LQR, MPC, and trajectory optimization.</p></article>
+      <article class="card"><h3>Learning-Based Control</h3><p>Reinforcement learning benchmarked against classical control.</p></article>
+      <article class="card"><h3>Real-Time C++</h3><p>Modern C++ for deterministic, embedded-style control software.</p></article>
+      <article class="card"><h3>Embedded Systems</h3><p>STM32 microcontrollers as the bridge from simulation to hardware.</p></article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2><span class="mono num">03</span> Projects</h2>
+    <div class="projects">
+      <article class="project">
+        <div class="tags mono"><span>MATLAB/Simulink</span><span>Python</span><span>RL</span><span>PID</span></div>
+        <h3>Reinforcement Learning–Based Control of an Inverted Pendulum</h3>
+        <p>Derived the mathematical model of an inverted pendulum in MATLAB/Simulink. Implemented a DQN-based reinforcement learning controller in Python and benchmarked it against a classical PID controller to evaluate dynamic stabilization.</p>
+      </article>
+      <article class="project">
+        <div class="tags mono"><span>C++</span><span>Qt</span><span>OOP</span></div>
+        <h3>Desktop Simulation Application</h3>
+        <p>Developed a state-driven desktop simulation application in modern C++ with the Qt framework, applying object-oriented design for a modular, extensible architecture.</p>
+      </article>
+      <article class="project">
+        <div class="tags mono"><span>PyTorch</span><span>Transformers</span><span>Sensor data</span></div>
+        <h3>Human Activity Recognition with Transformers (from scratch)</h3>
+        <p>Implemented a custom Transformer architecture from scratch using raw PyTorch tensor operations, achieving robust sensor-based activity classification on the PAMAP2 inertial-sensor dataset.</p>
+      </article>
+      <article class="project">
+        <div class="tags mono"><span>Scikit-Learn</span><span>SVM</span><span>KNN</span></div>
+        <h3>Classical Machine Learning Implementations</h3>
+        <p>Built and evaluated predictive models — linear/logistic regression, SVM and KNN — with Scikit-Learn on classification and regression problems, as a foundation for data-driven modeling.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2><span class="mono num">04</span> Technical skills</h2>
+    <div class="skills">
+      <div><h3 class="mono">Languages</h3><ul><li>C++</li><li>Python</li></ul></div>
+      <div><h3 class="mono">Simulation &amp; modeling</h3><ul><li>MATLAB</li><li>Simulink</li></ul></div>
+      <div><h3 class="mono">Scientific computing</h3><ul><li>NumPy</li><li>SciPy</li><li>Matplotlib</li><li>Scikit-Learn</li></ul></div>
+      <div><h3 class="mono">Learning architectures</h3><ul><li>PyTorch</li><li>MLP</li><li>CNN</li><li>RNN / LSTM</li><li>Transformers</li></ul></div>
+      <div><h3 class="mono">Embedded</h3><ul><li>STM32</li></ul></div>
+      <div><h3 class="mono">Software engineering</h3><ul><li>OOP</li><li>Git / GitHub</li><li>Linux</li></ul></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2><span class="mono num">05</span> Education</h2>
+    <div class="timeline">
+      <div class="tl-item">
+        <span class="mono when">2022 – Present</span>
+        <h3>B.Sc. Electrical Engineering — Control Engineering</h3>
+        <p>Ferdowsi University of Mashhad, Iran<br>Focus: control systems, dynamic modeling, and artificial intelligence.</p>
+      </div>
+    </div>
+    <p class="note mono">Language: English (intermediate)</p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="mono num">06</span> Contact</h2>
+    <p>Open to internships, research collaborations, and projects in control, GNC, and space systems.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:sina.heidaripour@gmail.com">sina.heidaripour@gmail.com</a>
+      <a class="btn" href="https://github.com/sinahdp" target="_blank" rel="noopener">github.com/sinahdp</a>
+    </div>
+  </section>
+</main>
+
+<footer><span class="mono">© <span id="year"></span> Mohammad Sina Heidaripour</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
